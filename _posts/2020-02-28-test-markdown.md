@@ -61,7 +61,7 @@ foo(3)
 
 How about some powershell?
 
-```ps
+```powershell
 $processes = Get-process
 foreach ($process ion $processes){
   Write-host "This is process $process
