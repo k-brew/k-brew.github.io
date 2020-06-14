@@ -59,6 +59,15 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
+How about some powershell?
+
+```ps
+$processes = Get-process
+foreach ($process ion $processes){
+  Write-host "This is process $process
+}
+```
+
 ## Boxes
 You can add notification, warning and error boxes like this:
 
