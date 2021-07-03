@@ -11,19 +11,17 @@ When trying to `git clone` or `git push` I would get the following error
 
 {: .box-error}
 git@github.com: Permission denied (public key).
-fatal: Could not read from remote repository.
-
+fatal: Could not read from remote repository.  
 Please make sure you have the correct access rights
 and the repository exists.
 
-To fix this, you need github to trust the machine.
-On your machine, run:
+To fix this, you need github to trust the machine.  
+On your machine, run:  
 ```bash 
 ssh-keygen
 ```
 
-Keep it simple by just pressing Enter, Enter, Enter.
-
+Keep it simple by just pressing Enter, Enter, Enter.  
 ```bash
 grunt@debian:~/dotfiles$ ssh-keygen
 Generating public/private rsa key pair.
@@ -48,12 +46,12 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-Keys will be stored in `~/.ssh`
-Run `cat ~/.ssh/id_rsa.pub` and copy the content.
+Keys will be stored in `~/.ssh`  
+Run `cat ~/.ssh/id_rsa.pub` and copy the content.  
 
-Open github and go to **Account Settings > SSH and GPG keys**
-Click **New SSH key**
-**Title**: machine name
-**Key**: _paste key here_
+Open github and go to **Account Settings > SSH and GPG keys**  
+Click **New SSH key**  
+**Title**: machine name  
+**Key**: _paste key here_  
 
 Now try `git push` or `git clone` and it should work!
