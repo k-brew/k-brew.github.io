@@ -1,0 +1,11 @@
+---
+layout: post
+title: Software Update Collection Setup
+subtitle: How I do it for my client
+tags: [MECM]
+comments: false
+---
+
+Current client has a relatively small server footprint of ~200 servers spread across 4 sites.
+Patching is carried out in 3(+1) stages.
+
